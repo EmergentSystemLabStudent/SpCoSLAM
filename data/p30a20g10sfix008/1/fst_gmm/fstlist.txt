@@ -1,0 +1,1 @@
+/home/akira/Dropbox/SpCoSLAM/data/p30a20g10sfix008/1/fst_gmm/000.fst

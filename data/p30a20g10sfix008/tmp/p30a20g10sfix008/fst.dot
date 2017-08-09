@@ -1,0 +1,277 @@
+digraph FST {
+rankdir = LR;
+size = "8.5,11";
+label = "";
+center = 1;
+orientation = Landscape;
+ranksep = "0.4";
+nodesep = "0.25";
+0 [label = "0", shape = circle, style = bold, fontsize = 14]
+	0 -> 1 [label = "<s>:<s>/-1", fontsize = 14];
+	0 -> 3 [label = "<s>:<s>/-1", fontsize = 14];
+	0 -> 5 [label = "<s>:<s>/-1", fontsize = 14];
+	0 -> 9 [label = "<s>:<s>/-1", fontsize = 14];
+	0 -> 25 [label = "<s>:<s>/-1", fontsize = 14];
+1 [label = "1", shape = circle, style = solid, fontsize = 14]
+	1 -> 2 [label = "<s>:<s>/-19.851", fontsize = 14];
+2 [label = "2", shape = circle, style = solid, fontsize = 14]
+	2 -> 24 [label = "<sp>:<sp>/-25.64", fontsize = 14];
+3 [label = "3", shape = circle, style = solid, fontsize = 14]
+	3 -> 4 [label = "<s>:<s>/-25.008", fontsize = 14];
+4 [label = "4", shape = circle, style = solid, fontsize = 14]
+	4 -> 35 [label = "‚Á:‚Á/-25.815", fontsize = 14];
+5 [label = "5", shape = circle, style = solid, fontsize = 14]
+	5 -> 6 [label = "<s>:<s>/-27.558", fontsize = 14];
+	5 -> 7 [label = "<s>:<s>/-27.526", fontsize = 14];
+	5 -> 8 [label = "<s>:<s>/-27.345", fontsize = 14];
+6 [label = "6", shape = circle, style = solid, fontsize = 14]
+	6 -> 37 [label = "‚Æ:‚Æ/-23.374", fontsize = 14];
+7 [label = "7", shape = circle, style = solid, fontsize = 14]
+	7 -> 38 [label = "‚Õ:‚Õ/-23.276", fontsize = 14];
+8 [label = "8", shape = circle, style = solid, fontsize = 14]
+	8 -> 36 [label = "‚Õ:‚Õ/-26.102", fontsize = 14];
+9 [label = "9", shape = circle, style = solid, fontsize = 14]
+	9 -> 10 [label = "<s>:<s>/-27.484", fontsize = 14];
+	9 -> 11 [label = "<s>:<s>/-25.615", fontsize = 14];
+	9 -> 12 [label = "<s>:<s>/-27.54", fontsize = 14];
+	9 -> 13 [label = "<s>:<s>/-27.622", fontsize = 14];
+	9 -> 14 [label = "<s>:<s>/-27.675", fontsize = 14];
+	9 -> 15 [label = "<s>:<s>/-25.483", fontsize = 14];
+	9 -> 16 [label = "<s>:<s>/-27.728", fontsize = 14];
+	9 -> 17 [label = "<s>:<s>/-27.768", fontsize = 14];
+	9 -> 18 [label = "<s>:<s>/-27.694", fontsize = 14];
+	9 -> 19 [label = "<s>:<s>/-28.008", fontsize = 14];
+	9 -> 20 [label = "<s>:<s>/-25.687", fontsize = 14];
+	9 -> 21 [label = "<s>:<s>/-26.147", fontsize = 14];
+	9 -> 22 [label = "<s>:<s>/-27.939", fontsize = 14];
+	9 -> 23 [label = "<s>:<s>/-27.109", fontsize = 14];
+	9 -> 24 [label = "<s>:<s>/-25.64", fontsize = 14];
+10 [label = "10", shape = circle, style = solid, fontsize = 14]
+	10 -> 37 [label = "‚Ç:‚Ç/-23.374", fontsize = 14];
+11 [label = "11", shape = circle, style = solid, fontsize = 14]
+	11 -> 52 [label = "‚ë:‚ë/-25.482", fontsize = 14];
+	11 -> 53 [label = "‚ë:‚ë/-26.201", fontsize = 14];
+12 [label = "12", shape = circle, style = solid, fontsize = 14]
+	12 -> 40 [label = "‚é:‚é/-23.814", fontsize = 14];
+13 [label = "13", shape = circle, style = solid, fontsize = 14]
+	13 -> 49 [label = "‚Ð‚å:‚Ð‚å/-23.276", fontsize = 14];
+14 [label = "14", shape = circle, style = solid, fontsize = 14]
+	14 -> 49 [label = "‚¼:‚¼/-23.276", fontsize = 14];
+15 [label = "15", shape = circle, style = solid, fontsize = 14]
+	15 -> 50 [label = "‚ë:‚ë/-25.771", fontsize = 14];
+	15 -> 51 [label = "‚ë:‚ë/-26.236", fontsize = 14];
+16 [label = "16", shape = circle, style = solid, fontsize = 14]
+	16 -> 49 [label = "‚¶‚å:‚¶‚å/-23.276", fontsize = 14];
+17 [label = "17", shape = circle, style = solid, fontsize = 14]
+	17 -> 49 [label = "‚«‚å:‚«‚å/-23.276", fontsize = 14];
+18 [label = "18", shape = circle, style = solid, fontsize = 14]
+	18 -> 38 [label = "‚Ô:‚Ô/-23.276", fontsize = 14];
+19 [label = "19", shape = circle, style = solid, fontsize = 14]
+	19 -> 49 [label = "‚è‚å:‚è‚å/-23.276", fontsize = 14];
+20 [label = "20", shape = circle, style = solid, fontsize = 14]
+	20 -> 42 [label = "‚ë:‚ë/-28.707", fontsize = 14];
+21 [label = "21", shape = circle, style = solid, fontsize = 14]
+	21 -> 41 [label = "‚ë:‚ë/-26.1", fontsize = 14];
+22 [label = "22", shape = circle, style = solid, fontsize = 14]
+	22 -> 38 [label = "‚Ç‚£:‚Ç‚£/-23.276", fontsize = 14];
+23 [label = "23", shape = circle, style = solid, fontsize = 14]
+	23 -> 39 [label = "‚é:‚é/-25.881", fontsize = 14];
+24 [label = "24", shape = circle, style = solid, fontsize = 14]
+	24 -> 43 [label = "‚ë:‚ë/-25.338", fontsize = 14];
+	24 -> 44 [label = "‚ë:‚ë/-25.386", fontsize = 14];
+	24 -> 45 [label = "‚ë:‚ë/-25.536", fontsize = 14];
+	24 -> 46 [label = "‚ë:‚ë/-25.643", fontsize = 14];
+	24 -> 47 [label = "‚ë:‚ë/-25.952", fontsize = 14];
+	24 -> 48 [label = "‚ë:‚ë/-23.307", fontsize = 14];
+	24 -> 49 [label = "‚ë:‚ë/-23.276", fontsize = 14];
+25 [label = "25", shape = circle, style = solid, fontsize = 14]
+	25 -> 26 [label = "<s>:<s>/-27.255", fontsize = 14];
+	25 -> 27 [label = "<s>:<s>/-27.633", fontsize = 14];
+	25 -> 28 [label = "<s>:<s>/-27.737", fontsize = 14];
+	25 -> 29 [label = "<s>:<s>/-28.127", fontsize = 14];
+	25 -> 30 [label = "<s>:<s>/-28.329", fontsize = 14];
+	25 -> 31 [label = "<s>:<s>/-28.46", fontsize = 14];
+	25 -> 32 [label = "<s>:<s>/-28.485", fontsize = 14];
+	25 -> 33 [label = "<s>:<s>/-28.39", fontsize = 14];
+	25 -> 34 [label = "<s>:<s>/-30.037", fontsize = 14];
+26 [label = "26", shape = circle, style = solid, fontsize = 14]
+	26 -> 43 [label = "‚Ì:‚Ì/-25.338", fontsize = 14];
+	26 -> 49 [label = "‚Ì:‚Ì/-23.276", fontsize = 14];
+27 [label = "27", shape = circle, style = solid, fontsize = 14]
+	27 -> 49 [label = "‚æ:‚æ/-23.276", fontsize = 14];
+28 [label = "28", shape = circle, style = solid, fontsize = 14]
+	28 -> 49 [label = "‚¬‚å:‚¬‚å/-23.276", fontsize = 14];
+29 [label = "29", shape = circle, style = solid, fontsize = 14]
+	29 -> 38 [label = "‚ð:‚ð/-23.276", fontsize = 14];
+30 [label = "30", shape = circle, style = solid, fontsize = 14]
+	30 -> 49 [label = "‚Ñ‚å:‚Ñ‚å/-23.276", fontsize = 14];
+31 [label = "31", shape = circle, style = solid, fontsize = 14]
+	31 -> 49 [label = "‚Ò‚å:‚Ò‚å/-23.276", fontsize = 14];
+32 [label = "32", shape = circle, style = solid, fontsize = 14]
+	32 -> 49 [label = "‚¿‚å:‚¿‚å/-23.276", fontsize = 14];
+33 [label = "33", shape = circle, style = solid, fontsize = 14]
+	33 -> 38 [label = "‚®:‚®/-23.276", fontsize = 14];
+34 [label = "34", shape = circle, style = solid, fontsize = 14]
+	34 -> 54 [label = "‚¤:‚¤/-25.764", fontsize = 14];
+35 [label = "35", shape = circle, style = solid, fontsize = 14]
+	35 -> 43 [label = "‚ë:‚ë/-25.338", fontsize = 14];
+	35 -> 44 [label = "‚ë:‚ë/-25.386", fontsize = 14];
+	35 -> 45 [label = "‚ë:‚ë/-25.536", fontsize = 14];
+	35 -> 46 [label = "‚ë:‚ë/-25.643", fontsize = 14];
+	35 -> 47 [label = "‚ë:‚ë/-25.952", fontsize = 14];
+	35 -> 48 [label = "‚ë:‚ë/-23.307", fontsize = 14];
+	35 -> 49 [label = "‚ë:‚ë/-23.276", fontsize = 14];
+36 [label = "36", shape = circle, style = solid, fontsize = 14]
+	36 -> 49 [label = "‚Ì:‚Ì/-23.276", fontsize = 14];
+37 [label = "37", shape = circle, style = solid, fontsize = 14]
+	37 -> 56 [label = "‚Ô‚¨‚Á:‚Ô‚¨‚Á/-24.736", fontsize = 14];
+	37 -> 57 [label = "‚Ô‚¨‚Á:‚Ô‚¨‚Á/-24.673", fontsize = 14];
+	37 -> 55 [label = "‚Ô‚¨‚Á:‚Ô‚¨‚Á/-24.994", fontsize = 14];
+38 [label = "38", shape = circle, style = solid, fontsize = 14]
+	38 -> 55 [label = "‚Ô‚¨‚Á:‚Ô‚¨‚Á/-24.994", fontsize = 14];
+	38 -> 56 [label = "‚Ô‚¨‚Á:‚Ô‚¨‚Á/-24.736", fontsize = 14];
+	38 -> 57 [label = "‚Ô‚¨‚Á:‚Ô‚¨‚Á/-24.673", fontsize = 14];
+	38 -> 58 [label = "‚Ô‚¨‚Á:‚Ô‚¨‚Á/-24.939", fontsize = 14];
+	38 -> 59 [label = "‚Ô‚¨‚Á:‚Ô‚¨‚Á/-24.125", fontsize = 14];
+39 [label = "39", shape = circle, style = solid, fontsize = 14]
+	39 -> 38 [label = "‚¨:‚¨/-23.276", fontsize = 14];
+40 [label = "40", shape = circle, style = solid, fontsize = 14]
+	40 -> 55 [label = "‚Ô‚¨‚Á:‚Ô‚¨‚Á/-24.994", fontsize = 14];
+	40 -> 56 [label = "‚Ô‚¨‚Á:‚Ô‚¨‚Á/-24.736", fontsize = 14];
+	40 -> 57 [label = "‚Ô‚¨‚Á:‚Ô‚¨‚Á/-24.673", fontsize = 14];
+	40 -> 58 [label = "‚Ô‚¨‚Á:‚Ô‚¨‚Á/-24.939", fontsize = 14];
+	40 -> 59 [label = "‚Ô‚¨‚Á:‚Ô‚¨‚Á/-24.125", fontsize = 14];
+41 [label = "41", shape = circle, style = solid, fontsize = 14]
+	41 -> 38 [label = "‚¨:‚¨/-23.276", fontsize = 14];
+42 [label = "42", shape = circle, style = solid, fontsize = 14]
+	42 -> 38 [label = "‚¤:‚¤/-23.276", fontsize = 14];
+43 [label = "43", shape = circle, style = solid, fontsize = 14]
+	43 -> 60 [label = "‚Ú:‚Ú/-21.58", fontsize = 14];
+	43 -> 61 [label = "‚Ú:‚Ú/-24.406", fontsize = 14];
+	43 -> 62 [label = "‚Ú:‚Ú/-24.353", fontsize = 14];
+44 [label = "44", shape = circle, style = solid, fontsize = 14]
+	44 -> 66 [label = "‚Ô‚¨‚Á:‚Ô‚¨‚Á/-20.155", fontsize = 14];
+45 [label = "45", shape = circle, style = solid, fontsize = 14]
+	45 -> 65 [label = "‚Ô‚¨‚Á:‚Ô‚¨‚Á/-20.641", fontsize = 14];
+46 [label = "46", shape = circle, style = solid, fontsize = 14]
+	46 -> 63 [label = "‚²:‚²/-21.078", fontsize = 14];
+47 [label = "47", shape = circle, style = solid, fontsize = 14]
+	47 -> 64 [label = "‚Ú:‚Ú/-20.952", fontsize = 14];
+48 [label = "48", shape = circle, style = solid, fontsize = 14]
+	48 -> 67 [label = "‚Ô‚¨‚Á:‚Ô‚¨‚Á/-24.211", fontsize = 14];
+49 [label = "49", shape = circle, style = solid, fontsize = 14]
+	49 -> 55 [label = "‚Ô‚¨‚Á:‚Ô‚¨‚Á/-24.994", fontsize = 14];
+	49 -> 56 [label = "‚Ô‚¨‚Á:‚Ô‚¨‚Á/-24.736", fontsize = 14];
+	49 -> 57 [label = "‚Ô‚¨‚Á:‚Ô‚¨‚Á/-24.673", fontsize = 14];
+	49 -> 58 [label = "‚Ô‚¨‚Á:‚Ô‚¨‚Á/-24.939", fontsize = 14];
+	49 -> 59 [label = "‚Ô‚¨‚Á:‚Ô‚¨‚Á/-24.125", fontsize = 14];
+50 [label = "50", shape = circle, style = solid, fontsize = 14]
+	50 -> 63 [label = "‚Ó‚§:‚Ó‚§/-21.078", fontsize = 14];
+51 [label = "51", shape = circle, style = solid, fontsize = 14]
+	51 -> 63 [label = "‚±:‚±/-21.078", fontsize = 14];
+52 [label = "52", shape = circle, style = solid, fontsize = 14]
+	52 -> 63 [label = "‚Û:‚Û/-21.078", fontsize = 14];
+53 [label = "53", shape = circle, style = solid, fontsize = 14]
+	53 -> 64 [label = "‚Û:‚Û/-20.952", fontsize = 14];
+54 [label = "54", shape = circle, style = solid, fontsize = 14]
+	54 -> 49 [label = "‚ë:‚ë/-23.276", fontsize = 14];
+55 [label = "55", shape = circle, style = solid, fontsize = 14]
+	55 -> 72 [label = "‚Æ‚«‚È:‚Æ‚«‚È/-22.444", fontsize = 14];
+	55 -> 73 [label = "‚Æ‚«‚È:‚Æ‚«‚È/-22.754", fontsize = 14];
+56 [label = "56", shape = circle, style = solid, fontsize = 14]
+	56 -> 69 [label = "‚Æ‚«‚È:‚Æ‚«‚È/-21.936", fontsize = 14];
+	56 -> 74 [label = "‚Æ‚«‚È:‚Æ‚«‚È/-22.614", fontsize = 14];
+	56 -> 75 [label = "‚Æ‚«‚È:‚Æ‚«‚È/-22.747", fontsize = 14];
+	56 -> 76 [label = "‚Æ‚«‚È:‚Æ‚«‚È/-23.008", fontsize = 14];
+57 [label = "57", shape = circle, style = solid, fontsize = 14]
+	57 -> 68 [label = "‚Æ‚«‚È:‚Æ‚«‚È/-22.668", fontsize = 14];
+58 [label = "58", shape = circle, style = solid, fontsize = 14]
+	58 -> 71 [label = "‚Æ‚«‚È:‚Æ‚«‚È/-22.351", fontsize = 14];
+59 [label = "59", shape = circle, style = solid, fontsize = 14]
+	59 -> 70 [label = "‚Æ:‚Æ/-25.045", fontsize = 14];
+60 [label = "60", shape = circle, style = solid, fontsize = 14]
+	60 -> 56 [label = "‚Á:‚Á/-24.736", fontsize = 14];
+	60 -> 57 [label = "‚Á:‚Á/-24.673", fontsize = 14];
+	60 -> 55 [label = "‚Á:‚Á/-24.994", fontsize = 14];
+61 [label = "61", shape = circle, style = solid, fontsize = 14]
+	61 -> 69 [label = "‚Æ‚«‚È:‚Æ‚«‚È/-21.936", fontsize = 14];
+62 [label = "62", shape = circle, style = solid, fontsize = 14]
+	62 -> 68 [label = "‚Æ‚«‚È:‚Æ‚«‚È/-22.668", fontsize = 14];
+63 [label = "63", shape = circle, style = solid, fontsize = 14]
+	63 -> 56 [label = "‚Á:‚Á/-24.736", fontsize = 14];
+	63 -> 57 [label = "‚Á:‚Á/-24.673", fontsize = 14];
+	63 -> 55 [label = "‚Á:‚Á/-24.994", fontsize = 14];
+64 [label = "64", shape = circle, style = solid, fontsize = 14]
+	64 -> 56 [label = "<sp>:<sp>/-24.736", fontsize = 14];
+	64 -> 57 [label = "<sp>:<sp>/-24.673", fontsize = 14];
+	64 -> 55 [label = "<sp>:<sp>/-24.994", fontsize = 14];
+65 [label = "65", shape = circle, style = solid, fontsize = 14]
+	65 -> 56 [label = "‚Á:‚Á/-24.736", fontsize = 14];
+	65 -> 57 [label = "‚Á:‚Á/-24.673", fontsize = 14];
+66 [label = "66", shape = circle, style = solid, fontsize = 14]
+	66 -> 56 [label = "<sp>:<sp>/-24.736", fontsize = 14];
+	66 -> 57 [label = "<sp>:<sp>/-24.673", fontsize = 14];
+67 [label = "67", shape = circle, style = solid, fontsize = 14]
+	67 -> 70 [label = "‚Ç:‚Ç/-25.045", fontsize = 14];
+68 [label = "68", shape = circle, style = solid, fontsize = 14]
+	68 -> 87 [label = "‚¶‚á:‚¶‚á/-25.879", fontsize = 14];
+69 [label = "69", shape = circle, style = solid, fontsize = 14]
+	69 -> 87 [label = "‚´:‚´/-25.879", fontsize = 14];
+70 [label = "70", shape = circle, style = solid, fontsize = 14]
+	70 -> 77 [label = "‚«:‚«/-25.107", fontsize = 14];
+	70 -> 78 [label = "‚«:‚«/-25.307", fontsize = 14];
+	70 -> 79 [label = "‚«:‚«/-24.378", fontsize = 14];
+	70 -> 80 [label = "‚«:‚«/-25.268", fontsize = 14];
+	70 -> 81 [label = "‚«:‚«/-24.764", fontsize = 14];
+	70 -> 82 [label = "‚«:‚«/-24.532", fontsize = 14];
+	70 -> 83 [label = "‚«:‚«/-25.455", fontsize = 14];
+71 [label = "71", shape = circle, style = solid, fontsize = 14]
+	71 -> 85 [label = "‚ª:‚ª/-25.808", fontsize = 14];
+72 [label = "72", shape = circle, style = solid, fontsize = 14]
+	72 -> 85 [label = "‚¾:‚¾/-25.808", fontsize = 14];
+	72 -> 86 [label = "‚¾:‚¾/-22.064", fontsize = 14];
+73 [label = "73", shape = circle, style = solid, fontsize = 14]
+	73 -> 87 [label = "‚¬‚á:‚¬‚á/-25.879", fontsize = 14];
+74 [label = "74", shape = circle, style = solid, fontsize = 14]
+	74 -> 90 [label = "‚´:‚´/-25.761", fontsize = 14];
+75 [label = "75", shape = circle, style = solid, fontsize = 14]
+	75 -> 88 [label = "‚½:‚½/-25.833", fontsize = 14];
+76 [label = "76", shape = circle, style = solid, fontsize = 14]
+	76 -> 89 [label = "‚´:‚´/-25.53", fontsize = 14];
+77 [label = "77", shape = circle, style = solid, fontsize = 14]
+	77 -> 84 [label = "‚Î:‚Î/-22.113", fontsize = 14];
+	77 -> 68 [label = "‚Î:‚Î/-22.668", fontsize = 14];
+78 [label = "78", shape = circle, style = solid, fontsize = 14]
+	78 -> 84 [label = "‚¾:‚¾/-22.113", fontsize = 14];
+79 [label = "79", shape = circle, style = solid, fontsize = 14]
+	79 -> 84 [label = "‚í:‚í/-22.113", fontsize = 14];
+	79 -> 68 [label = "‚í:‚í/-22.668", fontsize = 14];
+80 [label = "80", shape = circle, style = solid, fontsize = 14]
+	80 -> 69 [label = "‚Î:‚Î/-21.936", fontsize = 14];
+81 [label = "81", shape = circle, style = solid, fontsize = 14]
+	81 -> 84 [label = "‚ð:‚ð/-22.113", fontsize = 14];
+82 [label = "82", shape = circle, style = solid, fontsize = 14]
+	82 -> 69 [label = "‚í:‚í/-21.936", fontsize = 14];
+83 [label = "83", shape = circle, style = solid, fontsize = 14]
+	83 -> 69 [label = "‚¾:‚¾/-21.936", fontsize = 14];
+84 [label = "84", shape = circle, style = solid, fontsize = 14]
+	84 -> 85 [label = "‚¾:‚¾/-25.808", fontsize = 14];
+	84 -> 86 [label = "‚¾:‚¾/-22.064", fontsize = 14];
+85 [label = "85", shape = circle, style = solid, fontsize = 14]
+	85 -> 92 [label = "‚æ:‚æ/-21.167", fontsize = 14];
+86 [label = "86", shape = circle, style = solid, fontsize = 14]
+	86 -> 91 [label = "‚¦:‚¦/-26.123", fontsize = 14];
+87 [label = "87", shape = circle, style = solid, fontsize = 14]
+	87 -> 92 [label = "‚æ:‚æ/-21.167", fontsize = 14];
+88 [label = "88", shape = circle, style = solid, fontsize = 14]
+	88 -> 92 [label = "‚æ:‚æ/-21.167", fontsize = 14];
+89 [label = "89", shape = circle, style = solid, fontsize = 14]
+	89 -> 92 [label = "‚É‚å:‚É‚å/-21.167", fontsize = 14];
+90 [label = "90", shape = circle, style = solid, fontsize = 14]
+	90 -> 92 [label = "‚è‚å:‚è‚å/-21.167", fontsize = 14];
+91 [label = "91", shape = circle, style = solid, fontsize = 14]
+	91 -> 92 [label = "‚æ:‚æ/-21.167", fontsize = 14];
+92 [label = "92", shape = circle, style = solid, fontsize = 14]
+	92 -> 93 [label = "</s>:</s>/1", fontsize = 14];
+93 [label = "93", shape = doublecircle, style = solid, fontsize = 14]
+}

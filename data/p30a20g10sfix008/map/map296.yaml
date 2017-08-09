@@ -1,0 +1,7 @@
+image: /home/akira/Dropbox/SpCoSLAM/data/p30a20g10sfix008/map/map296.pgm
+resolution: 0.050000
+origin: [-30.000000, -20.000000, 0.000000]
+negate: 0
+occupied_thresh: 0.65
+free_thresh: 0.196
+

@@ -2,6 +2,9 @@
 
 SpCoSLAMのLet's Botへの実装
 
+SpCoSLAMプログラム構成(実装の方針メモ):
+https://docs.google.com/document/d/1NuwGSQczKkO1bFHv1oESLYjn82jqsa-pngG7d3sToQY/edit
+
 
 We propose an online learning algorithm based on a Rao-Blackwellized particle filter for spatial concept acquisition and mapping. We have proposed a nonparametric Bayesian spatial concept acquisition model (SpCoA). We propose a novel method (SpCoSLAM) integrating SpCoA and FastSLAM in the theoretical framework of the Bayesian generative model. The proposed method can simultaneously learn place categories and lexicons while incrementally generating an environmental map. 
 
