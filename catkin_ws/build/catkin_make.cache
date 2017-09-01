@@ -1,2 +1,0 @@
-openslam_gmapping:slam_gmapping/gmapping:slam_gmapping/slam_gmapping
--DCATKIN_DEVEL_PREFIX=/home/akira/Dropbox/SpCoSLAM/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/akira/Dropbox/SpCoSLAM/catkin_ws/install -G Unix Makefiles
