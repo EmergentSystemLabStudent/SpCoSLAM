@@ -34,3 +34,9 @@ This dataset was recorded
   for each keypoint is given as a list of integers in range [0,255].
 
 
+------------------------------------------------------------------------
+
+./CNN_Place205/ folder:
+This folder was created by Akira Taniguchi.
+The csv files were extracted by Caffe using a reference model Places-205.
+These visual features come from albert-B-laser-vision-dataset.

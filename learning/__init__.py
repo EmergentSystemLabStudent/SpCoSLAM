@@ -82,34 +82,27 @@ class Particle:
 ####################ファイル####################
 #パスはUbuntu使用時とWin使用時で変更する必要がある。特にUbuntuで動かすときは絶対パスになっているか要確認。
 #win:相対パス、ubuntu:絶対パス
-datafolder   = "/home/akira/Dropbox/SpCoSLAM/data/" #"./../datadump/" #
+datafolder   = "/home/user/SpCoSLAM/data/" #"./../datadump/" #
 JuliusVer = "v4.4" #"v.4.3.1"
 if (JuliusVer ==  "v4.4"):
-  Juliusfolder = "/home/akira/Dropbox/Julius/dictation-kit-v4.4/"
+  Juliusfolder = "/home/user/Julius/dictation-kit-v4.4/"
 else:
-  Juliusfolder = "/home/akira/Dropbox/Julius/dictation-kit-v4.3.1-linux/"
+  Juliusfolder = "/home/user/Julius/dictation-kit-v4.3.1-linux/"
 
-speech_folder = "/home/akira/Dropbox/Julius/directory/SpCoSLAM/*.wav" #*.wav" #音声の教示データフォルダ(Ubuntuフルパス)
-speech_folder_go = "/home/akira/Dropbox/Julius/directory/SpCoSLAMgo/*.wav" #*.wav" #音声の教示データフォルダ(Ubuntuフルパス)
-lmfolder = "/home/akira/Dropbox/SpCoSLAM/learning/lang_m/"
-#HMMtype = "DNN"  #"GMM"
-#if (HMMtype == "GMM"):
+speech_folder = "/home/user/Julius/directory/SpCoSLAM/*.wav" #*.wav" #音声の教示データフォルダ(Ubuntuフルパス)
+speech_folder_go = "/home/user/Julius/directory/SpCoSLAMgo/*.wav" #*.wav" #音声の教示データフォルダ(Ubuntuフルパス)
+lmfolder = "/home/user/SpCoSLAM/learning/lang_m/"
+
 lang_init = 'web.000.htkdic' # 'trueword_syllable.htkdic' #'phonemes.htkdic' # 初期の単語辞書（./lang_mフォルダ内）
-#else:
 lang_init_DNN = 'syllableDNN.htkdic' 
 
-datasetfolder = "/home/akira/Dropbox/SpCoSLAM/rosbag/"
+datasetfolder = "/home/user/SpCoSLAM/rosbag/"
 dataset1 = "albert-b-laser-vision/albert-B-laser-vision-dataset/"
 bag1 = "albertBimg.bag"
-dataset2 = "MIT_Stata_Center_Data_Set/"   ##用意できてない
-#datasets = {"albert":dataset1,"MIT":dataset2}
-datasets = [dataset1,dataset2]
+datasets = [dataset1]
 bags = [bag1]
 scantopic = ["scan", "base_scan _odom_frame:=odom_combined"]
-#datasetname = ""        #データセットフォルダ名（データセットを変更する場合、未使用）
 
-#data_name = 'datah.csv'      # 'test000' #位置推定の教示データ(./../sampleフォルダ内)
-#map_data : ./jygame/__inti__.py 
 
 correct_Ct = 'Ct_correct.csv'  #データごとの正解のCt番号
 correct_It = 'It_correct.csv'  #データごとの正解のIt番号
