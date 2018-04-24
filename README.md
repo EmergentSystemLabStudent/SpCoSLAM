@@ -29,8 +29,8 @@ In our paper of IROS2017, we used a rosbag file of open-dataset [albert-B-laser-
 
 ## 【Execution procedure】
 `cd ~/SpCoSLAM/learning `  
-`./SpCoSLAM.sh `
-`->trialname?(output_folder) >*output_folder_name*`
+`./SpCoSLAM.sh `  
+`->trialname?(output_folder) >*output_folder_name*`  
 
 ## 【Notes】
 - Sometimes `gflag`-related errors sometimes appear in `run_rosbag.py`. 
