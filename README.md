@@ -19,12 +19,16 @@ In our paper of IROS2017, we used a rosbag file of open-dataset [albert-B-laser-
 ## 【Preparation for execution】  
 - Path specification of training dataset, matching ros topic name etc (`__init__.py` and `run_gmapping.sh`)
 - Create a file that stores the teaching time from the time information of the training dataset
-- Prepare speech data files. Specify the file path in `__init__.py`.
-- Start `CNN_place.py` before running the learning program. Create a folder for files of image features.
-- To specify the number of particles, you need to change both `__ init__.py` and `run_gmapping.sh`.
+- Prepare speech data files. Specify the file path in `__init__.py`  
+- Start `CNN_place.py` before running the learning program  
+  Create a folder for files of image features  
+- To specify the number of particles, you need to change both `__ init__.py` and `run_gmapping.sh`  
+- Change the path of the folder name in `/catkin_ws/src/openslam_gmapping/gridfastslam/gridslamprocessor.cpp`  
+  We changed this file only.
+  [Note] If the original `gmapping` has already been installed on your PC, you need to change the uninstallation or path setting of `gmapping`.
 
 ## 【Execution procedure】
-`cd ~/SpCoSLAM / learning `
+`cd ~/SpCoSLAM / learning `  
 `./SpCoSLAM.sh `
 
 ## 【Notes】
