@@ -23,13 +23,14 @@ In our paper of IROS2017, we used a rosbag file of open-dataset [albert-B-laser-
 - Start `CNN_place.py` before running the learning program  
   Create a folder for files of image features  
 - To specify the number of particles, you need to change both `__ init__.py` and `run_gmapping.sh`  
-- Change the path of the folder name in `/catkin_ws/src/openslam_gmapping/gridfastslam/gridslamprocessor.cpp`  
-  We changed this file only.
+- Change the path of the folder name in `/catkin_ws/src/openslam_gmapping/gridfastslam/gridslamprocessor.cpp`    
+  We changed this file only.  
   [Note] If the original `gmapping` has already been installed on your PC, you need to change the uninstallation or path setting of `gmapping`.
 
 ## 【Execution procedure】
-`cd ~/SpCoSLAM / learning `  
+`cd ~/SpCoSLAM/learning `  
 `./SpCoSLAM.sh `
+`->trialname?(output_folder) >*output_folder_name*`
 
 ## 【Notes】
 - Sometimes `gflag`-related errors sometimes appear in `run_rosbag.py`. 
