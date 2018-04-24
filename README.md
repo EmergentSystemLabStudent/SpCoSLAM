@@ -1,7 +1,7 @@
 # SpCoSLAM
 
 Implementation of SpCoSLAM (Online Spatial Concept and Lexical Acquisition with Simultaneous Localization and Mapping)
-This is the source codes used in the experiment of our paper of IROS 2017.
+This is the source codes used in the experiment of our paper of IROS 2017.  
 
 ## Abstract of SpCoSLAM
 We propose an online learning algorithm based on a Rao-Blackwellized particle filter for spatial concept acquisition and mapping. We have proposed a nonparametric Bayesian spatial concept acquisition model (SpCoA). We propose a novel method (SpCoSLAM) integrating SpCoA and FastSLAM in the theoretical framework of the Bayesian generative model. The proposed method can simultaneously learn place categories and lexicons while incrementally generating an environmental map. 
@@ -12,7 +12,7 @@ We propose an online learning algorithm based on a Rao-Blackwellized particle fi
 - ROS indigo  
 - CNN feature extracter: Caffe (Reference model:[Places-205](http://places.csail.mit.edu/))  
 - Speech recognition system: Julius dictation-kit-v4.3.1-linux (Using Japanese syllabary dictionary, lattice output)  
-  If you perform the lexical acquisition (unsupervised word segmentaiton)： [latticelm 0.4](http://www.phontron.com/latticelm/) and OpenFST  
+- If you perform the lexical acquisition (unsupervised word segmentaiton)： [latticelm 0.4](http://www.phontron.com/latticelm/) and OpenFST  
 
 In our paper of IROS2017, we used a rosbag file of open-dataset [albert-B-laser-vision-dataset](https://dspace.mit.edu/handle/1721.1/62291).
 
@@ -30,7 +30,7 @@ In our paper of IROS2017, we used a rosbag file of open-dataset [albert-B-laser-
 ## 【Execution procedure】
 `cd ~/SpCoSLAM/learning `  
 `./SpCoSLAM.sh `  
-`->trialname?(output_folder) >*output_folder_name*`  
+->trialname?(output_folder) >*output_folder_name* 
 
 ## 【Notes】
 - Sometimes `gflag`-related errors sometimes appear in `run_rosbag.py`. 
@@ -54,4 +54,5 @@ https://arxiv.org/abs/1704.04664
 Sample video:
 https://youtu.be/z73iqwKL-Qk
 
-2018/01/15  Akira Taniguchi
+2018/01/15  Akira Taniguchi  
+2018/04/24  Akira Taniguchi  
