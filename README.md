@@ -1,16 +1,21 @@
 # SpCoSLAM
 
-Implementation of SpCoSLAM (Online Spatial Concept and Lexical Acquisition with Simultaneous Localization and Mapping)
-This is the source codes used in the experiment of our paper of IROS 2017.  
+Implementation of SpCoSLAM (Online Spatial Concept and Lexical Acquisition with Simultaneous Localization and Mapping)  
+This repository includes the source codes used for the experiments in our paper on IROS 2017.  
+  
+【Other repositories】  
+ [SpCoSLAM_Lets](https://github.com/EmergentSystemLabStudent/SpCoSLAM_Lets): Wrapper of SpCoSLAM for mobile robots (Recommended)  
+ [SpCoSLAM 2.0](https://github.com/a-taniguchi/SpCoSLAM2): An Improved and Scalable Online Learning of Spatial Concepts and Language Models with Mapping   
+ [SpCoSLAM_evaluation](https://github.com/a-taniguchi/SpCoSLAM_evaluation): The codes for the evaluation or the visualization in our paper  
 
 ## Abstract of SpCoSLAM
 We propose an online learning algorithm based on a Rao-Blackwellized particle filter for spatial concept acquisition and mapping. We have proposed a nonparametric Bayesian spatial concept acquisition model (SpCoA). We propose a novel method (SpCoSLAM) integrating SpCoA and FastSLAM in the theoretical framework of the Bayesian generative model. The proposed method can simultaneously learn place categories and lexicons while incrementally generating an environmental map. 
 
 ## 【Execution environment】  
-- Ubuntu　14.04  
+- Ubuntu 14.04  
 - Python 2.7.6  
 - ROS indigo  
-- CNN feature extracter: Caffe (Reference model:[Places-205](http://places.csail.mit.edu/))  
+- CNN feature extracter: Caffe (Reference model: [Places-205](http://places.csail.mit.edu/))  
 - Speech recognition system: Julius dictation-kit-v4.3.1-linux (Using Japanese syllabary dictionary, lattice output)  
 - If you perform the lexical acquisition (unsupervised word segmentaiton)： [latticelm 0.4](http://www.phontron.com/latticelm/) and OpenFST  
 
@@ -44,7 +49,7 @@ In our paper of IROS2017, we used a rosbag file of open-dataset [albert-B-laser-
 ---
 If you use this program to publish something, please describe the following citation information.
 
-Reference:　　
+Reference:  
 Akira Taniguchi, Yoshinobu Hagiwara, Tadahiro Taniguchi, and Tetsunari Inamura, "Online Spatial Concept and Lexical Acquisition with Simultaneous Localization and Mapping", IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS2017), 2017.
 
 
@@ -55,4 +60,5 @@ Sample video:
 https://youtu.be/z73iqwKL-Qk
 
 2018/01/15  Akira Taniguchi  
-2018/04/24  Akira Taniguchi  
+2018/04/24  Akira Taniguchi (Update)  
+2018/11/26  Akira Taniguchi (Update) 
