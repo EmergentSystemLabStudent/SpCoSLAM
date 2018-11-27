@@ -418,10 +418,10 @@ void GridSlamProcessor::setMotionModelParameters
                                static_cast<const RangeSensor*>(reading.getSensor()),
                                reading.getTime());
 
-      //s//akira/////////////////////////////////////////////
+      //s//Additions and changes/////////////////////////////////////////////
       // The trial data file name is read from a file.
-      string trialname("test");
-      std::ifstream ifs("/home/akira/Dropbox/SpCoSLAM/data/trialname.txt");
+      string trialname("test");     //Initialization
+      std::ifstream ifs("/home/user/SpCoSLAM/data/trialname.txt");     ///////////PATH
       if(ifs.fail()){
         m_infoStream << "READ ERROR. trialname" << endl;
       }
@@ -429,20 +429,21 @@ void GridSlamProcessor::setMotionModelParameters
       ifs>>trialname;
       //std::cout<<str<<std::endl;
 
-      string filename("/home/akira/Dropbox/SpCoSLAM/data/" );
-      string filename2;
+      string datafolder("/home/user/SpCoSLAM/data/" );     ///////////PATH
+      //string filename2;
       string filename3;
       string filename4;
       stringstream ss;
       int particle_index = 0;
-      //e//akira/////////////////////////////////////////////
+      //e//Additions and changes/////////////////////////////////////////////
       if (m_count>0){
     scanMatch(plainReading);
 
-    //s//akira/////////////////////////////////////////////
+    //s//Additions and changes/////////////////////////////////////////////
     ss << "/particle/" << m_count << ".csv";
-    filename2 = ss.str();
-    filename3 = filename + trialname + filename2;
+    filename3 = datafolder + trialname + ss.str();
+    //filename2 = ss.str();
+    //filename3 = datafolder + trialname + filename2;
 
     std::ofstream ofs( filename3.c_str() );
     m_infoStream << filename3.c_str() << endl;
@@ -465,7 +466,7 @@ void GridSlamProcessor::setMotionModelParameters
 
     //string filename5("/teachingflag.txt");
     string filename5("/gwaitflag.txt");
-    filename4 = filename + trialname + filename5;
+    filename4 = datafolder + trialname + filename5;
     string teachingflag;
     //string one("1");
 
@@ -495,7 +496,7 @@ void GridSlamProcessor::setMotionModelParameters
         stringstream ss2;
         ss2 << "/weight/" << m_count-1 << ".csv";
         //string filename7();
-        filename6 = filename + trialname + ss2.str();
+        filename6 = datafolder + trialname + ss2.str();
         m_infoStream << filename6.c_str() << endl;
         std::ifstream ifs3( filename6.c_str() );
         while(ifs3.fail()){ //if
@@ -526,7 +527,7 @@ void GridSlamProcessor::setMotionModelParameters
         }
 
     }
-    //e//akira/////////////////////////////////////////////
+    //e//Additions and changes/////////////////////////////////////////////
 	if (m_outputStream.is_open()){
 	  m_outputStream << "LASER_READING "<< reading.size() << " ";
 	  m_outputStream << setiosflags(ios::fixed) << setprecision(2);
@@ -562,31 +563,32 @@ void GridSlamProcessor::setMotionModelParameters
 	
       } else {
 	m_infoStream << "Registering First Scan"<< endl;
-    //s//akira/////////////////////////////////////////////
+    //s//Additions and changes/////////////////////////////////////////////
     ss << "/particle/" << m_count << ".csv";
-    filename2 = ss.str();
-    filename3 = filename + trialname + filename2;
+    filename3 = datafolder + trialname + ss.str();
+    //filename2 = ss.str();
+    //filename3 = datafolder + trialname + filename2;
 
     std::ofstream ofs( filename3.c_str() );
     m_infoStream << filename3.c_str() << endl;
 
     particle_index = 0;
-    //e//akira/////////////////////////////////////////////
+    //e//Additions and changes/////////////////////////////////////////////
     for (ParticleVector::iterator it=m_particles.begin(); it!=m_particles.end(); it++){
 	  m_matcher.invalidateActiveArea();
 	  m_matcher.computeActiveArea(it->map, it->pose, plainReading);
 	  m_matcher.registerScan(it->map, it->pose, plainReading);
 	  
 	  // cyr: not needed anymore, particles refer to the root in the beginning!
-	  TNode* node=new	TNode(it->pose, 0., it->node,  0);
+	  TNode* node=new TNode(it->pose, 0., it->node,  0);
 	  //node->reading=0;
       node->reading = reading_copy;
 	  it->node=node;
-      //s//akira/////////////////////////////////////////////
+      //s//Additions and changes/////////////////////////////////////////////
       const OrientedPoint& pose=it->pose;
       ofs << particle_index << "," <<  pose.x << "," << pose.y << "," << pose.theta << "," << it-> weight << "," << it->previousIndex << std::endl;
       particle_index++;
-      //e//akira/////////////////////////////////////////////
+      //e//Additions and changes/////////////////////////////////////////////
 
 	}
       }
@@ -640,7 +642,4 @@ void GridSlamProcessor::setMotionModelParameters
 
   
 };// end namespace
-
-
-
 
