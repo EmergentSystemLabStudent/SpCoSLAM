@@ -1,19 +1,27 @@
 # Learning results folder /data/  
 
-- /x/: x is the number of learning steps (the number of teaching utterances)  
-  - /fst_gmm/: WFST output folder of speech recognition results by Julius  
-  - /out_gmm/:　Output folder for word segmentation results by latticelm  
-  - index?.csv: the category number of spatial concepts and position distributions in ?-th particle (? is the number of particles)
-  - mu?.csv: mean vectors of the position distribution 　
-  - particle?.csv: particle information (the number of steps, particle ID, x coordinate of the robot, y coordinate of the robot, orientation of the robot, log likelihood, particle ID in previous step, index of spatial concept, index of position distribution)
-  - phi?.csv: results of Multinomial distribution of index it of position distribution
-  - pi?.csv: results of Multinomial distribution of index Ct of spatial concepts
-  - sig?.csv: covariance matrix of the position distribution 
-  - theta?.csv: Multinomial distribution of image feature
-  - W_list?.csv: word list
-  - W?.csv: Multinomial distribution of the names of places (The order follows the word list.)
-  - WD.htkdic:　Learned word dictionary including initial Japanese syllables.
-  - weights.csv: particle weights
-- gwaitflag.txt: a flag argument for learning programs
-- m_count2step.csv: relationships between m_count values and step values
-- teachingflag.txt: a flag argument for learning programs
+ - /trialname/ ("trialname" is the name of the trial, e.g., p30a20g10sfix008)
+   - /x/: x is the number of learning steps (the number of teaching utterances)  
+     - /fst_gmm/: WFST output folder of speech recognition results by Julius  
+     - /out_gmm/: output folder for word segmentation results by latticelm  
+     - index?.csv: the category number of spatial concepts and position distributions in ?-th particle (? is the number of particles)
+     - mu?.csv: mean vectors of the position distribution 　
+     - particle?.csv: particle information (the number of steps, particle ID, x coordinate of the robot, y coordinate of the robot, orientation of the robot, log likelihood, particle ID in previous step, index of spatial concept, index of position distribution)
+     - phi?.csv: results of multinomial distribution of index it of position distribution
+     - pi?.csv: results of multinomial distribution of index Ct of spatial concepts
+     - sig?.csv: covariance matrix of the position distribution 
+     - theta?.csv: multinomial distribution of image feature
+     - W_list?.csv: word list
+     - W?.csv: multinomial distribution of the names of places (The order follows the word list.)
+     - WD.htkdic: learned word dictionary including initial Japanese syllables for using Julius
+     - weights.csv: particle weights
+   - /img/: image feature at each learning step
+   - /map/: map data at each learning step
+   - /particle/: particle data output by　gmapping　at each "m\_count" ("m\_count" is an internal argument of gmapping.)
+     - \*.csv: particle ID, x coordinate of the robot, y coordinate of the robot, orientation of the robot, log likelihood, particle ID in previous "m\_count" (\* is the number of "m\_count")
+   - /tmp/: temporal folder for learning process
+   - \_\_init\_\_.py: copied from learning folder
+   - gwaitflag.txt: a flag argument for learning programs
+   - m_count2step.csv: relationships between m_count values and step values  
+   - teachingflag.txt: a flag argument for learning programs
+ - trialname.txt: a file for saving "trialname" 
