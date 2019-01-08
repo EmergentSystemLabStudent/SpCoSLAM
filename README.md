@@ -5,7 +5,7 @@ This repository includes the source codes used for the experiments in our paper 
   
 【Other repositories】  
  [SpCoSLAM_Lets](https://github.com/EmergentSystemLabStudent/SpCoSLAM_Lets): Wrapper of SpCoSLAM for mobile robots (Recommended)  
- [SpCoSLAM 2.0](https://github.com/a-taniguchi/SpCoSLAM2): An Improved and Scalable Online Learning of Spatial Concepts and Language Models with Mapping   
+ [SpCoSLAM 2.0](https://github.com/a-taniguchi/SpCoSLAM2): An Improved and Scalable Online Learning of Spatial Concepts and Language Models with Mapping (New version of online learning algorithm)   
  [SpCoSLAM_evaluation](https://github.com/a-taniguchi/SpCoSLAM_evaluation): The codes for the evaluation or the visualization in our paper  
 
 ## Abstract of SpCoSLAM
@@ -20,7 +20,7 @@ Figure: The graphical model of SpCoSLAM
 - ROS indigo  
 - CNN feature extracter: Caffe (Reference model: [Places-205](http://places.csail.mit.edu/))  
 - Speech recognition system: Julius dictation-kit-v4.3.1-linux (Using Japanese syllabary dictionary, lattice output)  
-- If you perform the lexical acquisition (unsupervised word segmentaiton)： [latticelm 0.4](http://www.phontron.com/latticelm/) and OpenFST  
+- If you perform the lexical acquisition (unsupervised word segmentaiton): [latticelm 0.4](http://www.phontron.com/latticelm/) and OpenFST  
 
 In our paper of IROS2017, we used a rosbag file of open-dataset [albert-B-laser-vision-dataset](https://dspace.mit.edu/handle/1721.1/62291).
 
