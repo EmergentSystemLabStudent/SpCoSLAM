@@ -2,10 +2,12 @@
 
 Implementation of SpCoSLAM (Online Spatial Concept and Lexical Acquisition with Simultaneous Localization and Mapping)  
 This repository includes the source codes used for the experiments in our paper on IROS 2017.  
+
+## Current repositories
+[NEW!]  [SpCoSLAM 2.0](https://github.com/a-taniguchi/SpCoSLAM2): An Improved and Scalable Online Learning of Spatial Concepts and Language Models with Mapping (New version of online learning algorithm)   
   
-【Other repositories】  
- [NEW!] [SpCoSLAM 2.0](https://github.com/a-taniguchi/SpCoSLAM2): An Improved and Scalable Online Learning of Spatial Concepts and Language Models with Mapping (Implementation for new version of online learning algorithm)   
- [SpCoSLAM_Lets](https://github.com/EmergentSystemLabStudent/SpCoSLAM_Lets): Wrapper of SpCoSLAM for mobile robots in ROS   
+Other repositories  
+ [SpCoSLAM_Lets](https://github.com/EmergentSystemLabStudent/SpCoSLAM_Lets): ROS Wrapper of SpCoSLAM for real mobile robots  
  [SpCoSLAM_evaluation](https://github.com/a-taniguchi/SpCoSLAM_evaluation): The codes for the evaluation or the visualization in our paper  
 
 ## Abstract of SpCoSLAM
@@ -14,7 +16,7 @@ We propose an online learning algorithm based on a Rao-Blackwellized particle fi
 Figure: The graphical model of SpCoSLAM   
 <img src="https://github.com/a-taniguchi/SpCoSLAM/blob/master/img/graphicalmodel02.jpg" width="520px">
 
-## 【Execution environment】  
+## Execution environment  
 - Ubuntu 14.04  
 - Python 2.7.6  
 - ROS indigo  
@@ -24,7 +26,7 @@ Figure: The graphical model of SpCoSLAM
 
 In our paper of IROS2017, we used a rosbag file of open-dataset [albert-B-laser-vision-dataset](https://dspace.mit.edu/handle/1721.1/62291).
 
-## 【Preparation for execution】  
+## Preparation for execution  
 - Path specification of training dataset, matching ros topic name etc (`__init__.py` and `run_gmapping.sh`)
 - Create a file that stores the teaching time from the time information of the training dataset
 - Prepare speech data files. Specify the file path in `__init__.py`  
@@ -35,12 +37,12 @@ In our paper of IROS2017, we used a rosbag file of open-dataset [albert-B-laser-
   We changed this file only.  
   [Note] If the original `gmapping` has already been installed on your PC, you need to change the uninstallation or path setting of `gmapping`.
 
-## 【Execution procedure】
+## Execution procedure  
 `cd ~/SpCoSLAM/learning `  
 `./SpCoSLAM.sh `  
 ->trialname?(output_folder) >*output_folder_name* 
 
-## 【Notes】
+## Notes  
 - Sometimes `gflag`-related errors sometimes appear in `run_rosbag.py`. 
   It is due to file reading failure. 
   It will reload and it will work so it will not be a problem.
@@ -65,3 +67,4 @@ https://youtu.be/z73iqwKL-Qk
 2018/01/15  Akira Taniguchi  
 2018/04/24  Akira Taniguchi (Update)  
 2018/11/26  Akira Taniguchi (Update) 
+
