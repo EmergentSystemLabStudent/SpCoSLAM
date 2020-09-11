@@ -1,9 +1,10 @@
-http://cres.usc.edu/radishrepository/view-one.php?name=albert-b-laser
+Radish: Robotics Research Datasets
+https://dspace.mit.edu/handle/1721.1/62236
 
-http://cres.usc.edu/radishrepository/view-one.php?name=albert-b-laser-vision
+albert-b-laser-vision
+https://dspace.mit.edu/handle/1721.1/62291
 
-http://cres.usc.edu/radishrepository/view-all.php
-
+---
     This data set was obtained from the Robotics Data Set
     Repository (Radish)~\cite{Radish}. Thanks go to Cyrill Stachniss
     for providing this data.
@@ -14,3 +15,4 @@ http://cres.usc.edu/radishrepository/view-all.php
     title = "The Robotics Data Set Repository (Radish)",
     url = "http://radish.sourceforge.net/",
     }
+---
